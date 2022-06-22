@@ -2,10 +2,10 @@
     <string name="app_name">Minha musica favorita</string>
     <string name="imagem_banda_favorita">imagem_banda_favorita</string>
     <string name="nome_musica">Só os loucos sabem</string>
-    <string name="letra_musica_charlie_brow">Segurei minhas lágrimas \n Pois não queria demonstrar a emoção \n Já que estava ali só pra observar \n E aprender um pouco mais sobre a percepção \n Eles dizem que é impossível encontrar o amor \n Sem perder a razão \n Mas pra quem tem pensamento forte \n O impossível é só questão de opinião</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="letra_musica_charlie_brow">Segurei <b>minhas</b> lágrimas \n Pois não queria demonstrar a emoção \n Já que estava ali só pra observar \n E aprender um pouco mais sobre a percepção \n Eles dizem que é impossível encontrar o amor \n Sem perder a razão \n Mas pra quem tem pensamento forte \n O impossível é só questão de opinião</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="appbar_DetalheBanda">Detalhes da Banda</string>
-    <string name="detalhes_banda"> Charlie Brown Jr. foi uma banda de rock brasileira formada em 1992 na cidade de Santos, por Chorão (vocal), Champignon (baixo), Marcão (guitarra), Thiago Castanho (guitarra) e Renato Pelado (bateria). A banda tem dez álbuns de estúdio lançados, três álbuns ao vivo e sete DVDs.</string>
-
+    <string name="detalhes_banda"> Charlie Brown Jr. foi uma banda  de rock brasileira formada em 1992 na cidade de Santos, por Chorão (vocal), Champignon (baixo), Marcão (guitarra), Thiago Castanho (guitarra) e Renato Pelado (bateria). A banda tem dez álbuns de estúdio lançados, três álbuns ao vivo e sete DVDs.</string>
+    <string name="artista">Artista: %s </string>
 </resources>

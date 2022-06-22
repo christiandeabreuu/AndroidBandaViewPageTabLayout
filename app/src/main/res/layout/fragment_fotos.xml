@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="FragmentsInformacoes.FragmentInformacoes">
+    tools:context=".presentation.view.fragment.FragmentInformacoes">
 
  <androidx.recyclerview.widget.RecyclerView
      android:id="@+id/rvFotos"
@@ -14,6 +14,8 @@
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintStart_toStartOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
-     tools:listitem="@layout/fotos_banda"/>
-
+     tools:listitem="@layout/fotos_banda"
+     tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+     tools:spanCount="2"
+     />
 </androidx.constraintlayout.widget.ConstraintLayout>

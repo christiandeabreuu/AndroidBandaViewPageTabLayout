@@ -1,4 +1,4 @@
-package br.com.zup.minha_musica_favorita.FragmentsInformacoes
+package br.com.zup.minha_musica_favorita.presentation.view.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -14,10 +14,13 @@
         android:theme="@style/Theme.MinhaMusicaFavorita"
         tools:targetApi="31">
         <activity
-            android:name=".DetalheActivity.DetalheActivity"
+            android:name="br.com.zup.minha_musica_favorita.presentation.view.activity.AlbumActivity"
             android:exported="false" />
         <activity
-            android:name=".Main.MainActivity"
+            android:name="br.com.zup.minha_musica_favorita.presentation.view.activity.DetalheActivity"
+            android:exported="false" />
+        <activity
+            android:name="br.com.zup.minha_musica_favorita.presentation.view.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

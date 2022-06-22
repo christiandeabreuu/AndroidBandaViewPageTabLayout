@@ -4,8 +4,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import br.com.zup.minha_musica_favorita.FragmentsFoto.FragmentFotos
-import br.com.zup.minha_musica_favorita.FragmentsInformacoes.FragmentInformacoes
+import br.com.zup.minha_musica_favorita.presentation.view.fragment.FragmentFotos
+import br.com.zup.minha_musica_favorita.presentation.view.fragment.FragmentInformacoes
 
 class DetalhePageAdapter(
     fragmentManager: FragmentManager,
