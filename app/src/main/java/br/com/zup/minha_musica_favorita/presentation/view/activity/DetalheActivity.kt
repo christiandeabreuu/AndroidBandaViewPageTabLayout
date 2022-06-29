@@ -21,8 +21,8 @@ class DetalheActivity : AppCompatActivity() {
 
         binding.vpDetalhe.adapter = DetalhePageAdapter(supportFragmentManager, lifecycle)
 
-        TabLayoutMediator(binding.tbDetalhe, binding.vpDetalhe){ tab, position ->
-            when(position){
+        TabLayoutMediator(binding.tbDetalhe, binding.vpDetalhe) { tab, position ->
+            when (position) {
                 0 -> tab.text = "Informações"
                 1 -> tab.text = "Fotos"
             }
@@ -30,11 +30,11 @@ class DetalheActivity : AppCompatActivity() {
         }.attach()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true) // habilita o bota de voltar
-
         supportActionBar?.setTitle(R.string.appbar_DetalheBanda) // troca o nome da appbar
 
 
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {
             this.finish()

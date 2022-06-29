@@ -8,7 +8,7 @@ import br.com.zup.minha_musica_favorita.presentation.model.Album
 
 class FotosPagerAdapter(
     private var listaAlbum: MutableList<Album>,
-    private var clickDetalhes: (album : Album) -> Unit
+    private var clickDetalhes: (album: Album) -> Unit
 ) :
     RecyclerView.Adapter<FotosPagerAdapter.ViewHolder>() {
     override fun onCreateViewHolder(
@@ -33,20 +33,13 @@ class FotosPagerAdapter(
 
     class ViewHolder(val binding: FotosBandaBinding) : RecyclerView.ViewHolder(binding.root) {
         fun receberInformacoes(album: Album) {
-            var foto = binding.ivImagemBanda.setImageResource(album.getImage())
-            var titulo = binding.tvTituloBanda
+            binding.ivImagemBanda.setImageResource(album.getImage())
 
         }
-
     }
 
-
-    fun atualizarListaBanda(novaLista: MutableList<Album>) {
-        if (listaAlbum.size == 0) {
-            listaAlbum = novaLista
-        } else {
-            listaAlbum.addAll(novaLista)
-        }
+    fun atualizarListaBanda(novaLista: List<Album>) {
+        listaAlbum.addAll(novaLista)
         notifyDataSetChanged()
     }
 

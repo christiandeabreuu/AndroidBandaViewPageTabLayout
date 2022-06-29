@@ -25,6 +25,7 @@ class FragmentFotos : Fragment() {
     private lateinit var binding: FragmentFotosBinding
     private var listaAlbuns = mutableListOf<Album>()
     private val repository = AlbumRepository()
+
     private val viewModel: AlbumViewModel by lazy {
         ViewModelProvider(this)[AlbumViewModel::class.java]
     }
@@ -45,10 +46,12 @@ class FragmentFotos : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        viewModel.getAllAlbum()
         binding.rvFotos.adapter = adapter
         binding.rvFotos.layoutManager = GridLayoutManager(context, 2)
-        repository.getListAlbum()
+
         observable()
+
     }
 
     fun irParaDetalheAlbum(album: Album) {
@@ -61,7 +64,7 @@ class FragmentFotos : Fragment() {
 
     private fun observable() {
         viewModel.album.observe(this.viewLifecycleOwner) {
-            adapter.atualizarListaBanda(it as MutableList<Album>)
+            adapter.atualizarListaBanda(it)
         }
     }
 }

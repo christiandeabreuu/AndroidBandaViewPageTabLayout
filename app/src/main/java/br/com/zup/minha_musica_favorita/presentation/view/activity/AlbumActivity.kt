@@ -18,7 +18,6 @@ class AlbumActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true) // habilita o bota de voltar
-
         supportActionBar?.title = "Detalhe do Album" // muda o nome da appbar
 
         val bundle = intent.getBundleExtra("BUNDLE")
@@ -36,9 +35,7 @@ class AlbumActivity : AppCompatActivity() {
             binding.ivCoracao.setOnClickListener {
                 Toast.makeText(this, "Album adicionado aos favoritos", Toast.LENGTH_SHORT).show()
             }
-
         }
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
